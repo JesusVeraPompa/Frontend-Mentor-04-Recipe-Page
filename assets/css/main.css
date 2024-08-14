@@ -42,18 +42,18 @@ main > .container > .row {
     object-fit: cover;
 }
 .col > .fila2 {
-    padding: 36px;
+    padding: 34px;
 }
 .col > .fila2 > h1 {
     font-family: YoungSerif-Regular;
-    font-size: 40px;
+    font-size: 36px;
     text-align: start;
     color: hsl(24, 5%, 18%);
 }
 .col > .fila2 > p {
     padding-top: 18px;
     text-align: start;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Outfit-Medium;
     color: hsl(30, 10%, 34%);
 }
@@ -63,6 +63,7 @@ main > .container > .row {
     margin: 36px;
     margin-top: 0;
     padding: 36px;
+    padding-bottom: 10px;
     border-radius: 15px;
 }
 .col > .fila3 > h2 {
@@ -71,8 +72,8 @@ main > .container > .row {
     font-size: 22px;
 }
 .col > .fila3 > ul > li {
-    font-size: 18px;
-    padding: 15px;
+    font-size: 16px;
+    padding: 10px;
     color: hsl(30, 10%, 34%);
     font-family: Outfit-Medium;
 }
