@@ -1,4 +1,12 @@
 /*--------------------------------------- General Styles ---------------------------------------*/
+@font-face {
+    font-family: YoungSerif-Regular;
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+}
+@font-face {
+    font-family: Outfit-Regular;
+    src: url("../fonts/outfit/static/Outfit-Regular.ttf");
+}
 * {
     margin: 0;
     padding: 0;
@@ -11,20 +19,35 @@
     flex-direction: column;
 }
 /*--------------------------------------- Header Styles ---------------------------------------*/
-header {
-    min-height: 15vh;
-    background-color: blueviolet;
-}
+
 /*--------------------------------------- Main Styles -----------------------------------------*/
 main {
     flex-grow: 1;
-    background-color: aqua;
+    background-color: #f4e6d8;
+}
+main > .container> .row {
+    background-color: white;
+}
+.col > .fila1 > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.col > .fila2{
+    padding: 40px;
+}
+.col > .fila2>h1{
+    font-family: YoungSerif-Regular;
+    font-size: 40px;
+    text-align: start;
+}
+.col > .fila2>p{
+    padding-top: 18px;
+    text-align: start;
+    font-size: 22px; 
+    font-family: Outfit-Regular;
 }
 /*--------------------------------------- Footer Styles ---------------------------------------*/
-footer {
-    min-height: 5vh;
-    background-color: brown;
-}
 
 /*---------------------------------------------------------------------------------------------*/
 /*--------------------------------------- Media Queries ---------------------------------------*/
@@ -40,6 +63,32 @@ footer {
 @media screen and (min-width: 1024px) {
     /*-------------------------- Header Styles --------------------------*/
     /*-------------------------- Main Styles ----------------------------*/
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main > .container{
+        width: 800px;;
+    }
+    main > .container> .row {
+        background-color: white;
+        padding: 40px;
+        border-radius: 15px;
+        
+    }
+    .col > .fila1 > img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .col > .fila2{
+        padding: 40px;
+        padding-left: 0;
+    }
+    .col > .fila2>p{
+        font-size: 17px;        
+    }
     /*-------------------------- Footer Styles --------------------------*/
 }
 /*------------------------------------------- 1440px -------------------------------------------*/
