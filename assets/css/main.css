@@ -7,6 +7,14 @@
     font-family: Outfit-Regular;
     src: url("../fonts/outfit/static/Outfit-Regular.ttf");
 }
+@font-face {
+    font-family: Outfit-Medium;
+    src: url("../fonts/outfit/static/Outfit-Medium.ttf");
+}
+@font-face {
+    font-family: Outfit-Bold;
+    src: url("../fonts/outfit/static/Outfit-Bold.ttf");
+}
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +33,7 @@ main {
     flex-grow: 1;
     background-color: #f4e6d8;
 }
-main > .container> .row {
+main > .container > .row {
     background-color: white;
 }
 .col > .fila1 > img {
@@ -33,20 +41,45 @@ main > .container> .row {
     height: auto;
     object-fit: cover;
 }
-.col > .fila2{
-    padding: 40px;
+.col > .fila2 {
+    padding: 36px;
 }
-.col > .fila2>h1{
+.col > .fila2 > h1 {
     font-family: YoungSerif-Regular;
     font-size: 40px;
     text-align: start;
+    color: hsl(24, 5%, 18%);
 }
-.col > .fila2>p{
+.col > .fila2 > p {
     padding-top: 18px;
     text-align: start;
-    font-size: 22px; 
-    font-family: Outfit-Regular;
+    font-size: 18px;
+    font-family: Outfit-Medium;
+    color: hsl(30, 10%, 34%);
 }
+.col > .fila3 {
+    background-color: hsl(330, 100%, 98%);
+    text-align: start;
+    margin: 36px;
+    margin-top: 0;
+    padding: 36px;
+    border-radius: 15px;
+}
+.col > .fila3 > h2 {
+    color: hsl(332, 51%, 32%);
+    font-family: Outfit-Bold;
+    font-size: 22px;
+}
+.col > .fila3 > ul > li {
+    font-size: 18px;
+    padding: 15px;
+    color: hsl(30, 10%, 34%);
+    font-family: Outfit-Medium;
+}
+li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
 /*--------------------------------------- Footer Styles ---------------------------------------*/
 
 /*---------------------------------------------------------------------------------------------*/
@@ -69,25 +102,32 @@ main > .container> .row {
         align-items: center;
         justify-content: center;
     }
-    main > .container{
-        width: 800px;;
+    main > .container {
+        width: 800px;
     }
-    main > .container> .row {
+    main > .container > .row {
         background-color: white;
-        padding: 40px;
+        padding: 36px;
         border-radius: 15px;
-        
     }
     .col > .fila1 > img {
         width: 100%;
         border-radius: 15px;
     }
-    .col > .fila2{
-        padding: 40px;
+    .col > .fila2 {
+        padding: 36px;
         padding-left: 0;
     }
-    .col > .fila2>p{
-        font-size: 17px;        
+    .col > .fila2 > p {
+        font-size: 17px;
+    }
+    .col > .fila3 {
+        margin: 0px;
+        margin-top: 0;
+        padding-bottom: 5px;
+    }
+    .col > .fila3 > ul > li {
+        padding: 5px;
     }
     /*-------------------------- Footer Styles --------------------------*/
 }
